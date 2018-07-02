@@ -1,6 +1,6 @@
 /**
  * @file webpack config for development
- * @author xiongyang(xiongyang@baidu.com)
+ * @author xiongyang
  */
 // 把env中的变量都赋值给process.env下
 require('dotenv').config();

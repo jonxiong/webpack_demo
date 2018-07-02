@@ -1,6 +1,6 @@
 /**
  * @file generate style loaders
- * @author xiongyang(xiongyang@baidu.com)
+ * @author xiongyang
  */
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 

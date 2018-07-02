@@ -1,6 +1,6 @@
 /**
  * @file webpack base config
- * @author xiongyang(xiongyang@baidu.com)
+ * @author xiongyang
  */
 const {join} = require('path');
 const webpack = require('webpack');

@@ -1,6 +1,6 @@
 /**
  * @file production build script
- * @author xionyang(xiongyang@baidu.com)
+ * @author xionyang
  */
 process.env.NODE_ENV = 'production';
 const ora = require('ora');

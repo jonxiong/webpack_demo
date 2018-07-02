@@ -1,6 +1,6 @@
 /**
  * @file webpack config for development
- * @author xiongyang(xiongyang@baidu.com)
+ * @author xiongyang
  */
 require('dotenv').config();
 // 定义端口号（如果env中定义过，就用env中的，否则用9000）
@@ -14,7 +14,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Clean = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlInlineSourceWebpackPlugin = require('@super-fe/BdrainfnResourceInline');
+// const HtmlInlineSourceWebpackPlugin = require('@super-fe/BdrainfnResourceInline');
 const baseWebpackConfig = require('./webpack.base');
 const styleLoaders = require('./styleLoaders');
 const pages = require('../package.json').pages;
@@ -67,13 +67,4 @@ module.exports = merge(baseWebpackConfig, {
         ])
     ]
         .concat(htmlPluginArr)
-        .concat(
-            // 如果是tpl模板文件，扫描如果标签中带inline标识的地方，都替换成内联代码，再写回此文件中
-            new HtmlInlineSourceWebpackPlugin({
-                option: {
-                    rootpath: join(__dirname, '../output'),
-                    compress: true
-                }
-            })
-    )
 });
