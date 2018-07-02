@@ -1,0 +1,1 @@
+BUILD_SUBMITTER -x -m baidu/baiduapp/swan-webpage -c "cd baidu/baiduapp/swan-webpage && sh build.sh" -u ./output
